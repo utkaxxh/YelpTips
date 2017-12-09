@@ -1,5 +1,4 @@
 # YelpTips
-Code to scrape reviews on yelp and generate tips from the reviews. Tips are basically what dish is recommended for the restaurant.
 dishes.txt This file consists of scraped menus from all of the Indian and Chinese restaurant of New York City. 
 ExtractReviews.py Use this code to extract reviews
 menuscrapper.py This code is used to scrape menus out of restaurants listed on Yelp
