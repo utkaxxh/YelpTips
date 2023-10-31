@@ -1,19 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Nov 26 16:43:12 2017
-
-@author: deepanshparab
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Nov 26 12:15:45 2017
-
-@author: deepanshparab
-"""
-
 
 from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
@@ -121,8 +105,8 @@ def print_most_frequent(ngrams, num=20):
         
 ####################################################################################### 
 def run(path,filename):
-    dishes = loadwords('/Users/deepanshparab/Desktop/BIA_project/dishes.txt') 
-    recommender_list = loadwords('/Users/deepanshparab/Desktop/BIA_project/List.txt') 
+    dishes = loadwords('/Users/utkarsh/Desktop/BIA_project/dishes.txt') 
+    recommender_list = loadwords('/Users/utkarsh/Desktop/BIA_project/List.txt') 
     unique_sentences = UniqueReviews(path)
     time.sleep(1)
     print('\nExtracted from the restaurant: {}'.format(filename)) 
@@ -156,7 +140,7 @@ def run(path,filename):
                 
          
 
-dirpath = '/Users/deepanshparab/Desktop/BIA_project/Restaurants/'
+dirpath = '/Users/utkarsh/Desktop/BIA_project/Restaurants/'
 filename = '2.TheMasalaWala.txt'
 path = dirpath+filename      
 run(path,filename)
