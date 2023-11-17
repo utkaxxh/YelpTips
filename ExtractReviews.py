@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Wed Nov 22 20:37:12 2017
-
-@author: deepanshparab
+@author: utkarsh
 """
 # all the pacakages required for the code
 from bs4 import BeautifulSoup
@@ -71,8 +69,8 @@ def extractRestaurant(inputpath,outputpath):
     
              
 if __name__ == "__main__":
-    base_input_path = '/Users/deepanshparab/Desktop/Fall-2017-Cources/BIA-660A/WebAnalytics-BIA-660A-/Project/Final_model/Data/Chinese'
-    base_output_path ='/Users/deepanshparab/Desktop/Fall-2017-Cources/BIA-660A/WebAnalytics-BIA-660A-/Project/Final_model/Data/test'
+    base_input_path = '/Users/utkarsh/Desktop/Project/Final_model/Data/Chinese'
+    base_output_path ='/Users/utkarsh/Desktop/Project/Final_model/Data/test'
     extractRestaurant(base_input_path,base_output_path)
 
     
