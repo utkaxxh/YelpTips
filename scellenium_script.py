@@ -3,7 +3,7 @@
 """
 Created on Tue Nov 21 14:03:17 2017
 
-@author: deepanshparab
+@author: utkarsh
 """
 # selenium packages
 import time
@@ -37,7 +37,7 @@ def init_driver():
     dcap["phantomjs.page.settings.userAgent"] = (ua.random)
     service_args=['--ssl-protocol=any','--ignore-ssl-errors=true']
     # provide the path for the chrome driver
-    driver = webdriver.Chrome('/Users/deepanshparab/Desktop/Fall-2017-Cources/BIA-660A/WebAnalytics-BIA-660A-/week10/chromedriver',desired_capabilities=dcap,service_args=service_args)
+    driver = webdriver.Chrome('/Users/utkarsh/Desktop/Fall-2017-Cources/BIA-660A/WebAnalytics-BIA-660A-/week10/chromedriver',desired_capabilities=dcap,service_args=service_args)
     return(driver)
 
 ########################################################################################################################################## 
@@ -159,7 +159,7 @@ def ScrapRestro(query,location):
 ##########################################################################################################################################            
 
 def MkResDir(resname):
-    base_path = '/Users/deepanshparab/Desktop/Fall-2017-Cources/BIA-660A/WebAnalytics-BIA-660A-/Project/Data'
+    base_path = '/Users/utkarsh/Desktop/Fall-2017-Cources/BIA-660A/WebAnalytics-BIA-660A-/Project/Data'
     filename = base_path+'/Chinese/'+resname
     
     if not os.path.exists((filename)):
@@ -196,7 +196,7 @@ if __name__ == "__main__":
     location = input(" where do you want to find it? ")
     login(driver,username,password)
     ScrapRestro(query,location)
-    base_path = '/Users/deepanshparab/Desktop/Fall-2017-Cources/BIA-660A/WebAnalytics-BIA-660A-/Project/Data'
+    base_path = '/Users/utkarsh/Desktop/Fall-2017-Cources/BIA-660A/WebAnalytics-BIA-660A-/Project/Data'
     time.sleep(5)
     driver.quit()
 
