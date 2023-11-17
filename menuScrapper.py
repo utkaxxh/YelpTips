@@ -29,7 +29,7 @@ def init_driver():
     dcap["phantomjs.page.settings.userAgent"] = (ua.random)
     service_args=['--ssl-protocol=any','--ignore-ssl-errors=true']
     # provide the path for the chrome driver
-    driver = webdriver.Chrome('/Users/deepanshparab/Desktop/Fall-2017-Cources/BIA-660A/WebAnalytics-BIA-660A-/week10/chromedriver',desired_capabilities=dcap,service_args=service_args)
+    driver = webdriver.Chrome('/Users/utkarsh/Desktop/Fall-2017-Cources/BIA-660A/WebAnalytics-BIA-660A-/week10/chromedriver',desired_capabilities=dcap,service_args=service_args)
     return(driver)
 
 ########################################################################################################################################## 
@@ -106,7 +106,7 @@ def ScrapRestro(query,location):
             if not re.search('adredir',res_url): # the if condition is used to filter out all ads
                 driver.get(res_url)
                 time.sleep(1)
-            file= open('/Users/deepanshparab/Desktop/BIA_project/latestchinesedishes.txt','a')
+            file= open('/Users/utkarsh/Desktop/BIA_project/latestchinesedishes.txt','a')
             try:
                 menu = driver.find_element_by_partial_link_text('View the full menu')
                 menu.click()
